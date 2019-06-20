@@ -38,26 +38,72 @@ header, section, footer, aside, nav, article, figure {
 .wrapper{
 	background: #fff;
 	width: 80%;
-	height: 100vh;
 	padding: 3vh;
 	float: left;
 	-webkit-box-shadow: 0px 0px 20px #999;
 	        box-shadow: 0px 0px 20px #999;
 }
+/* header */
 header{
-	height: 5vh;
+	height: 10vh;
 	display: grid;
-	grid-template-columns: 0.5fr 1fr 0.5fr;
+	grid-template-columns: 0.5fr 1fr 0.4fr;
 	justify-content: center;
 	align-content: center;
 }
-a.logotype{}
-nav{
-	/* margin: 2vh 0 0 3vh; */
+a.logotype{
+	background-color: pink;
 }
-li{}
-li{}
-li{}
-.contacts{}
-.contacts span{}
-.contacts b{}
+nav{
+	margin: 2vh 0 0 3vh;
+	justify-self: center;
+}
+nav ul li{
+	display: inline-block;
+	text-transform: uppercase;
+	padding-left: 20px;
+}
+nav ul li a.menu-item{
+	text-decoration: none;
+}
+.contacts{
+	text-align: center;
+}
+.contacts span{
+	display: block;
+	color: orange;
+}
+.contacts b{
+	color: #09f;
+}
+/* top_area: slider and map */
+.top-area{
+	height: 30vh;
+	margin: 2vh 0 2vh 0; 
+	display: grid;
+	grid-template-columns: 1.5fr 0.4fr;
+	gap: 1vw;
+}
+.slider{
+	background-color: blue;
+}
+.map{
+	background-color: brown;
+}
+
+/* content */
+.content{
+	height: 50vh;
+	display: grid;
+	grid-template-columns: 0.5fr 1fr 0.4fr;
+	gap: 10px;
+}
+.left{
+	background-color: lightblue;
+}
+.right{
+	background-color: lightpink;
+}
+.main{
+	background-color: lightgray;
+}
